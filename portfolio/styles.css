@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header, main, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+.nav-toggle {
+    display: none;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul.active {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 50px; /* Adjust based on your navbar height */
+        left: 0;
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 10px 15px;
+        text-align: center;
+    }
+}
+.profile-img {
+    width: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes it circular */
+    margin: 20px 0;
+}
+
+.project-img {
+    width: 100%; /* Full width of the parent container */
+    max-width: 600px; /* Limits the size */
+    height: auto; /* Maintains aspect ratio */
+    margin: 10px 0;
+}
