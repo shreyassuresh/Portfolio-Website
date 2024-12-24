@@ -22,5 +22,5 @@ document.querySelector('nav').insertBefore(navToggle, document.querySelector('na
 
 navToggle.addEventListener('click', () => {
     const navList = document.querySelector('nav ul');
-   // navList.classList.toggle('active');//
+    navList.classList.toggle('active');
 });
